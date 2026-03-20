@@ -1,5 +1,6 @@
 onload = () => {
   document.body.classList.remove("container");
+});
 // 🎵 Control de música
 const musica = document.getElementById("musica");
 const btn = document.getElementById("btnMusica");
