@@ -61,58 +61,7 @@ body {
     ),
     linear-gradient(90deg, rgb(255, 94, 0), rgb(240, 240, 240));
 }
-/* 💖 BOTÓN CORAZÓN */
-#btnMusica {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 70px;
-  height: 70px;
-  background: #ff4d6d;
-  border: none;
-  cursor: pointer;
-  z-index: 9999;
-  transform: rotate(-45deg);
-  animation: latido 1.5s infinite;
-}
 
-/* círculos del corazón */
-#btnMusica::before,
-#btnMusica::after {
-  content: "";
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  background: #ff4d6d;
-  border-radius: 50%;
-}
-
-#btnMusica::before {
-  top: -35px;
-  left: 0;
-}
-
-#btnMusica::after {
-  left: 35px;
-  top: 0;
-}
-
-/* icono */
-#btnMusica span {
-  position: absolute;
-  transform: rotate(45deg);
-  color: white;
-  font-size: 14px;
-  top: 25px;
-  left: 15px;
-}
-
-/* animación */
-@keyframes latido {
-  0% { transform: rotate(-45deg) scale(1); }
-  50% { transform: rotate(-45deg) scale(1.1); }
-  100% { transform: rotate(-45deg) scale(1); }
-}
 
 .flowers {
   position: relative;
